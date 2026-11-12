@@ -1,0 +1,56 @@
+{
+  "name": "dsh-memory",
+  "version": "0.1.0",
+  "description": "DSH 记忆模块：项目记忆 (dsh.md) 与跨项目记忆 (D:\\dsh\\MEMORY.md)，会话开始/压缩后自动注入，侧边栏可视化编辑。",
+  "type": "module",
+  "icon": "icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "icon.svg",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "memory",
+    "agent",
+    "context"
+  ],
+  "author": "YuzhenZhou1327 <nuchenzhou@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuzhenZhou1327/dsh-memory.git"
+  },
+  "homepage": "https://github.com/YuzhenZhou1327/dsh-memory#readme",
+  "bugs": {
+    "url": "https://github.com/YuzhenZhou1327/dsh-memory/issues"
+  }
+}

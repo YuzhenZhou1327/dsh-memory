@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory",
+    "description": "Long-term memory: cross-project memory in D:\\dsh\\MEMORY.md and per-project memory in each project's dsh.md. Injected at session start and after every context compaction, with a hard length limit."
+  }
+}

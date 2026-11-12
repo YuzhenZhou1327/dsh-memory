@@ -1,0 +1,5 @@
+# dsh-memory 的 bundle patch：把主机侧插件条目插入当前 profile 的插件名单。
+# 通过 package.json 的 dsh.bundle.patch 字段生效。
+- insert:
+    - id: dsh-memory
+      name: 'dsh-memory'
